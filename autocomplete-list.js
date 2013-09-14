@@ -195,16 +195,3 @@ function AutocompleteList(provider) {
     }
   };
 }
-
-function foo() {
-	var len = this.length;
-	
-	for (var i=0; i<len; i++) {
-		this.push( this[i] );
-	}
-}
-
-Array.prototype.foo = foo;
-a = [1,2,3];
-a.foo();
-alert(a);
