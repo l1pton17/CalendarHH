@@ -1,0 +1,85 @@
+.placeholder-wrap {
+	position: relative;
+	display: inline-block;
+	margin: 2px 0px;
+}
+
+.placeholder-wrap input[type="text"], .placeholder-wrap textarea, .placeholder-content {
+	/*text-indent: 10px;*/
+    border: 1px rgb(200, 200, 200) solid;
+	margin: 0px;
+	resize: none;
+	padding: 0px 0px 0px 10px;
+}
+
+.placeholder-wrap textarea {
+	padding: 3px 0px 0px 10px;
+}
+
+.placeholder-wrap input[type="text"] {
+	height: 26px;
+}
+
+.placeholder-wrap input[type="text"]::-ms-clear {
+	display:none;
+}
+
+.placeholder-wrap input[type="text"], .placeholder-wrap textarea {
+	border-radius: 2px;
+    outline: none;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15) inset, -2px 0 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+.delete {
+    border-radius: 2px 0px 0px 2px !important;
+	border-right: none !important;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15) inset !important;
+}
+
+.placeholder-content {
+	line-height: 27px;
+	color: #aaa;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.placeholder-content-hide {
+	visibility: hidden;
+}
+
+.placeholder-delete {
+    /*margin-right: 15px;*/
+    width: 16px;
+    padding: 0 5px 0 5px;
+    background: #fff;
+	border: 1px rgb(200, 200, 200) solid;
+    border-radius: 0px 2px 2px 0px;
+    border-left: none;
+    height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+    outline: none;
+	cursor: text;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.15) inset;
+	display: inline-block;
+	position: absolute;
+}
+
+.placeholder-delete-button {
+    color: rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+.placeholder-delete-button-hide {
+	visibility: hidden;
+}
+
+.placeholder-delete-button:hover {
+	color: #000;
+}

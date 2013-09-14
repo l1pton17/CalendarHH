@@ -1,0 +1,100 @@
+.callout-beak {
+    width: 12.7px;
+    height: 12.7px;
+    background-color: rgb(255, 255, 255);
+    background-repeat:no-repeat;
+    border: 1px solid rgb(210, 210, 210);
+    border-collapse:separate;
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index:-10;
+    box-shadow:rgba(0, 0, 0, 0.47) 0px 0px 7px 0px;
+    position:absolute;
+}
+.callout-beakLeft {
+    margin-left: -7.8px;
+}
+.callout-beakTop {
+    margin-top: -7.8px;
+}
+.callout-content {
+	padding: 20px 20px 10px 20px;
+}
+.callout-remove-closebutton .callout-content {
+	padding: 5px;
+}
+.callout-content button {
+	margin: 15px 15px 10px 0px;
+	border: 1px #888 solid;
+    border-radius: 5px;
+    background-color: white;
+	background-image: -webkit-linear-gradient(top, #fff, #eee);
+	background-image: -moz-linear-gradient(top, #fff, #eee);
+	background-image: -ms-linear-gradient(top, #fff, #eee);
+	background-image: -o-linear-gradient(top, #fff, #eee);
+	background-image: linear-gradient(top, #fff, #eee);
+    text-align: center;
+	padding: 2px 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+}
+.callout-content button:hover {
+	cursor: pointer;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) inset;
+}
+.callout-content button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) inset;
+}
+.callout-body {
+    width:350px;
+    background-color:rgb(255, 255, 255);
+    padding:0px;
+    word-wrap:break-word;
+    border-collapse:separate;
+	min-height: 50px;
+}
+        .callout {
+            background:rgb(255, 255, 255);
+            border: 1px solid rgb(210, 210, 210);
+            box-shadow:rgba(0, 0, 0, 0.47) 0px 0px 7px 0px;
+            position:absolute;
+            top:200px;
+            left:50px;
+            z-index:99;
+        }
+        .callout-header {
+            margin: 0px 0px 0px 20px;
+			height: 10px;
+			position: relative;
+        }
+		.callout-remove-closebutton  .callout-header {
+			display: none;
+			height: 0px;
+		}
+		.callout-close {
+			display: none;
+		}
+        .callout-closebutton {
+            color:black;
+            font-size: 20px;
+            margin: 0px;
+            padding:0px;
+            width: 20px;
+            height: 20px;
+			position: absolute;
+			top: -4px;
+			right: 4px;
+            text-decoration:none;
+            text-align:center;
+            border: 1px solid transparent;
+            border-radius: 2px;
+        }
+		.callout-remove-closebutton .callout-closebutton {
+			display: none;
+		}

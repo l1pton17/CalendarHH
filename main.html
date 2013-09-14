@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"  charset="utf-8"  content="text/html; charset=windows-1251">
+	<link rel="stylesheet" href="window.css" />
+	<link rel="stylesheet" href="calendar.css" />
+	<link rel="stylesheet" href="callout.css" />
+	<link rel="stylesheet" href="placeholder.css" />
+	<link rel="stylesheet" href="event.css" />
+	<link rel="stylesheet" href="autocomplete.css" />
+</head>
+
+<body>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="animate.js"></script>
+	<script type="text/javascript" src="calendarManager.js"></script>
+	<script type="text/javascript" src="placeholder.js"></script>
+	<script type="text/javascript" src="calloutManager.js"></script>
+	<script type="text/javascript" src="eventManagerInterface.js"></script>
+	<script type="text/javascript" src="eventManager.js"></script>
+	<script type="text/javascript" src="localStorageProvider.js"></script>
+	<script type="text/javascript" src="autocomplete-list.js"></script>
+	<script type="text/javascript" src="autocomplete.js"></script>
+	<script type="text/javascript" src="filtering-list-provider.js"></script>
+    <div id="mainholder">
+		<div class="toolbar main-width">
+      		<div class="event-control">
+         		<button class="event-control-button" id="createEventId">Добавить</button>
+         		<button class="event-control-button" id="refreshEventId">Обновить</button>
+      		</div>
+      		<div class="event-search" id="id-event-search-wrap">
+					<input id="id-input-event-search"
+               			type="text"
+               		/>
+      		</div>
+   		</div>
+	</div>
+	<div id="placeholder">
+	</div>
+	<script>
+		var calendarManager = new CalendarManager();
+		calendarManager.setValue(new Date());
+		
+		CreatePlaceholder({elem: document.getElementById('id-input-event-search'), value: "Событие, дата или участник"});
+		var eventManager = new EventManager({
+			storageProvider: new LocalStorageProvider(),
+			interval: 1,
+			interfaceOptions:{
+				createEvent: document.getElementById('createEventId'),
+				refreshEvent: document.getElementById('refreshEventId'),
+				calendar: calendarManager
+			}
+		});
+		
+    var dataProvider = new FilteringListProvider(eventManager);
+
+    var autocomplete = new Autocomplete({
+      elem: document.getElementById('id-event-search-wrap'),
+	  input: document.getElementById('id-input-event-search'),
+      provider: dataProvider
+    });
+	
+	document.getElementById('placeholder').appendChild( calendarManager.getElement() );
+	</script>
+</body>
+
+</html>

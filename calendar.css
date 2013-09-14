@@ -1,0 +1,126 @@
+		.calendar-widget {
+			margin: 0 auto;
+		}
+		
+		.date-picker {
+			margin: 5px 0px;
+		}
+        .date-picker-button {
+            border: 1px rgb(230, 230, 230) solid;
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+			margin:0px;
+        }
+        .date-picker-button:hover {
+            cursor: pointer;
+            background-color: rgb(250, 250, 250);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) inset;
+        }
+		.date-picker-button:active {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) inset;
+		}
+		.date-picker-month {
+			width:130px;
+			display: inline-block;
+			text-align:center;
+		}
+        .calendar-table {
+            border-collapse: separate !important;
+			border-spacing: 0px;
+			font-size: 11px;
+        }
+        .calendar-table tr:first-child > td:first-child {
+            border-top-left-radius: 5px;
+        }
+        .calendar-table tr:first-child > td:last-child {
+            border-top-right-radius: 5px;
+        }
+        .calendar-table tr:last-child > td:first-child {
+            border-bottom-left-radius: 5px;
+        }
+        .calendar-table tr:last-child > td:last-child {
+            border-bottom-right-radius: 5px;
+        }
+        .calendar-table tr:last-child > td {
+            border-bottom: 1px rgb(222, 222, 222) solid;
+        }
+        .calendar-table td {
+            width: 130px;
+            height: 100px;
+            border-top: 1px rgb(222, 222, 222) solid;
+            border-right: 1px rgb(222, 222, 222) solid;
+            border-left:0px;
+            vertical-align: top;
+			padding: 10px;
+        }
+		.calendar-table .date-cell.selected, .calendar-table .date-cell.marked {
+			outline: 2px solid #0072C6;
+			outline-offset: -2px;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			box-sizing:border-box;
+			background-color: rgba(200,220,250,0.5);
+		}
+		.calendar-table .date-cell.selected .date-holder {
+			color: #000;
+		}
+		.calendar-table  .event-cell {
+			background-color: rgb(194,228,254);
+		}
+		.calendar-table .current-date {
+			background-color: #eee;
+		}
+		.calendar-table .current-date .date-holder {
+			font-weight: bold;
+			color: #000;
+		}
+        .calendar-table .date-cell:hover:not(.selected):not(.marked):not(.event-cell) {
+            background-color: #eee;
+        }
+        .calendar-table .date-cell:hover .date-holder {
+            color: #000;
+        }
+        .calendar-table .caption-cell:hover .date-holder {
+            color: rgb(200, 200, 200);
+        }
+        .calendar-table td:first-child {
+            border-left: 1px rgb(222, 222, 222) solid;
+        }
+		.calendar-table .event-title {
+			font-size: 100%;
+			margin: 5px 0px;
+			font-weight: bold;
+		}
+		.calendar-table .event-content {
+			position: relative;
+			height: 100%;
+		}
+		.calendar-table .event-description-wrap {
+			margin: 5px 0px;
+			position:absolute;
+			top: 35px;
+			bottom: 20px;
+			overflow: hidden;
+		}
+		.calendar-table .event-description {
+			font-size: 100%;
+			top: 0px;
+			position:relative;
+		}
+		.calendar-table .date-holder {
+            font-size: 100%;
+            color: rgb(150, 150, 150);
+		}
+		.calendar-table .prev-month, .calendar-table .next-month {
+			cursor: pointer;
+		}
+        #divCalendarSrcId {
+            float:left;
+            position: relative;
+        }
+        #divCalendarDstId {
+            float:right;
+            position: relative;
+        }

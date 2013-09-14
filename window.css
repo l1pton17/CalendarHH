@@ -1,0 +1,79 @@
+
+        body {
+            font-family: Arial, 'Sans serif';
+        }
+		
+		input, textarea {
+			font-family: inherit;
+			font-size: 16px;
+		}
+		
+        #mainholder {
+            width: 100%;
+            position: fixed;
+            height: 100px;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(245, 245, 245);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            z-index: 103;
+        }
+        .event-control {
+            float: left;
+			margin: 2px 0px;
+        }
+        .event-control-button {
+            color: white;
+            background-color: rgb(2, 113, 199);
+            height: 27px;
+            width: 80px;
+            border: 0px;
+            border-radius: 2px;
+            margin: 4px;
+			margin-top:0px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+        }
+        .event-control-button:hover {
+            border: 1px solid #2F5BB7;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.15) inset;
+        }
+        .event-control-button:active, .event-control-button-pressed {
+            border: 1px solid #2F5BB7 !important;
+            color: rgb(177, 195, 215);
+            background-color: rgb(1, 93, 164);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset !important;
+        }
+        .event-search {
+			float:right;
+			background-image: url("search-icon.png");
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 16px 16px;
+			padding-left: 25px;
+			padding-right: 30px;
+			display:inline-block;
+        }
+		
+		.event-search input[type="text"] {
+            width: 240px;
+		}
+		
+        .event-search input[type="text"].deactive {
+            color: rgb(210, 210, 210);
+        }
+        #placeholder {
+            top: 120px;
+            position: absolute;
+            height: auto;
+			left: 5px;
+			right: 5px;
+        }
+        .toolbar {
+            position: relative;
+            margin: 50px auto;
+            padding: 0px 20px 20px 20px;
+        }
+		.main-width {
+			width: 910px;
+		}

@@ -1,0 +1,34 @@
+.callout-event-title {
+	font-size: 14pt;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.callout-event-date {
+	font-size: 10pt;
+	margin: 15px 5px;
+}
+
+.callout-event-description {
+	position: absolute;
+	left: 0px;
+	bottom: 80px;
+}
+
+.callout-event-button-placeholder {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.callout-event-members-caption {
+	font-size: 9pt;
+	color: #999;
+	font-weight: 600;
+	margin: 5px 5px 0px 5px;
+}
+
+.callout-event-members {
+	margin: 0px 5px 5px 5px;
+	font-size: 12pt;
+}
